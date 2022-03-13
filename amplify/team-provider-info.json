@@ -15,7 +15,13 @@
       "function": {
         "makenftpublica74dd696": {
           "deploymentBucketName": "amplify-makenftpublic-dev-202717-deployment",
-          "s3Key": "amplify-builds/makenftpublica74dd696-7a58626b2b6535726535-build.zip"
+          "s3Key": "amplify-builds/makenftpublica74dd696-6d7135787a5661557752-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dqtfhfc0nexi0",
+          "type": "cicd"
         }
       }
     }

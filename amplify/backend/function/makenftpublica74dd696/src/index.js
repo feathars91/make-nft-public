@@ -1,24 +1,43 @@
 /**
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
-exports.handler = async (event) => {
-  console.log(`EVENT: ${JSON.stringify(event)}`);
 
-  var nft = 'asset/1.png'
+ var AWS = require('aws-sdk');
+ var s3 = new AWS.S3();
+
+exports.handler = async (event) => {
+  //console.log(`EVENT: ${JSON.stringify(event)}`);
+  
+  //event = JSON.stringify(event);
+  
+  console.log(event);
+  
+  var tokenId = event['queryStringParameters']['tokenId'];
+
+  console.log(tokenId)
+  
+  
   var params = {
     ACL:'public-read',
     Bucket: "euphoriansmetadata",
-    Key: nft
+    Key: tokenId,
   };
-  s3.putObjectAcl(params, function (err, data) {
-    if (err) console.log(err, err.stack);
+  
+  console.log('start')
+  
+ await s3.putObjectAcl(params, function (err, data) {
+    if (err) 
+    
+      console.log(err, err.stack);
     // an error occurred
-    else console.log(data); // successful response
+    else 
+    
+      console.log(data); // successful response
     /*
          data = {
          }
          */
-  });
+  }).promise();
 
   return {
     statusCode: 200,
@@ -27,6 +46,6 @@ exports.handler = async (event) => {
     //      "Access-Control-Allow-Origin": "*",
     //      "Access-Control-Allow-Headers": "*"
     //  },
-    body: JSON.stringify(data),
+    body: JSON.stringify('data'),
   };
 };
