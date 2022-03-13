@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/nft": {
+      "name": "/nft",
+      "lambdaFunction": "makenftpublica74dd696",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

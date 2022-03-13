@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-makenftpublic-dev-202717-authRole",
+      "UnauthRoleArn": "arn:aws:iam::040734154933:role/amplify-makenftpublic-dev-202717-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::040734154933:role/amplify-makenftpublic-dev-202717-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-makenftpublic-dev-202717-deployment",
+      "UnauthRoleName": "amplify-makenftpublic-dev-202717-unauthRole",
+      "StackName": "amplify-makenftpublic-dev-202717",
+      "StackId": "arn:aws:cloudformation:us-east-1:040734154933:stack/amplify-makenftpublic-dev-202717/19f0af40-a275-11ec-9d71-0aa4b54d6669",
+      "AmplifyAppId": "dqtfhfc0nexi0"
+    },
+    "categories": {
+      "function": {
+        "makenftpublica74dd696": {
+          "deploymentBucketName": "amplify-makenftpublic-dev-202717-deployment",
+          "s3Key": "amplify-builds/makenftpublica74dd696-7a58626b2b6535726535-build.zip"
+        }
+      }
+    }
+  }
+}
